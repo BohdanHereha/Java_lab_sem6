@@ -31,7 +31,7 @@ public class RealSystem extends AbstractSystem {
     private static Scanner getScanner(String fileName) throws FileNotFoundException {
         return new Scanner(
                 new File(
-                        "D:/3 course  II/Java2/Lab3/src/com/company/" + fileName
+                        "../Lab3/src/com/company/" + fileName
                 )
         );
     }
