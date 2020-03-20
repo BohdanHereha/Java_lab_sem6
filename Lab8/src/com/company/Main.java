@@ -11,7 +11,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        DeeplyClonableComposite deeplyClonableComposite = new DeeplyClonableComposite();
+        DeeplyCloneableComposite deeplyClonableComposite = new DeeplyCloneableComposite();
         DeeplyCloneableLeaf deeplyCloneableLeaf = new DeeplyCloneableLeaf("type1");
         SimplyCloneableComposite simplyCloneableComposite = new SimplyCloneableComposite();
         SimplyCloneableLeaf simplyCloneableLeaf = new SimplyCloneableLeaf("type2");

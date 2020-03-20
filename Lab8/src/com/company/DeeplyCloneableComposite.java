@@ -11,7 +11,7 @@ package com.company;
  * @see CloneableElement
  * @since 20.03.2020
  */
-public class DeeplyClonableComposite extends Composite {
+public class DeeplyCloneableComposite extends Composite {
     /**
      * Gives copy of this object.
      *
@@ -19,7 +19,7 @@ public class DeeplyClonableComposite extends Composite {
      */
     @Override
     public Object clone() {
-        Composite cloned = new DeeplyClonableComposite();
+        Composite cloned = new DeeplyCloneableComposite();
         for (GraphicElement element : this.getGraphicElements()) {
             cloned.getGraphicElements().add((GraphicElement) element.clone());
         }
