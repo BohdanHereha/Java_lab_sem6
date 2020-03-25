@@ -9,8 +9,8 @@ import java.util.HashMap;
  * @version 1.0
  * @since 03.03.2020
  */
-public class ProxySystem extends AbstractSystem {
-    RealSystem realSystemFacade = new RealSystem();
+public class Proxy extends Subject {
+    RealSubject realSubject = new RealSubject();
     HashMap<String, String> cache = new HashMap<>();
 
     /**
@@ -25,7 +25,7 @@ public class ProxySystem extends AbstractSystem {
             throws FileNotFoundException {
         String result = cache.get(fileName + x + y);
         if (result == null) {
-            result = realSystemFacade.getColor(x, y, fileName);
+            result = realSubject.getColor(x, y, fileName);
             cache.put(fileName + x + y, result);
         }
         return result;

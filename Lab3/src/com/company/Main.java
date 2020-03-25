@@ -15,19 +15,16 @@ public class Main {
         Client client = new Client();
 
         System.out.println("---getColor from ProxySystem---");
-        client.doTask(new ProxySystem());
+        client.doTask(new Proxy());
         System.out.println("---getColor from RealSystem---");
-        client.doTask(new RealSystem());
-        RealSystem realSystem =
-                new RealSystem();
+        client.doTask(new RealSubject());
 
-        String firstLineOfFile = realSystem.getFirstLineOfFile("1.bmp1");
+        RealSubject realSystem =new RealSubject();
+        String firstLine = realSystem.getFirstLine("1.bmp1");
         String color = realSystem.getColor(0, 0, "1.bmp1");
         System.out.println(color);
         color = realSystem.getColor(0, 1, "1.bmp1");
         System.out.println(color);
-
-        firstLineOfFile = realSystem.getFirstLineOfFile("1.bmp1");
-        System.out.println(firstLineOfFile);
+        System.out.println(firstLine);
     }
 }

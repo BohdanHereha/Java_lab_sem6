@@ -12,24 +12,24 @@ import java.io.FileNotFoundException;
 
 public class Client {
     /**
-     * @param abstractSystem
+     * @param subject
      * @throws FileNotFoundException
      */
-    void doTask(AbstractSystem abstractSystem) throws FileNotFoundException {
+    void doTask(Subject subject) throws FileNotFoundException {
 
-        String color = abstractSystem.getColor(1, 0, "1.bmp1");
+        String color = subject.getColor(1, 0, "1.bmp1");
         System.out.println(color);
 
-        color = abstractSystem.getColor(1, 2, "1.bmp1");
+        color = subject.getColor(1, 2, "1.bmp1");
         System.out.println(color);
 
-        color = abstractSystem.getColor(2, 2, "1.bmp1");
+        color = subject.getColor(2, 2, "1.bmp1");
         System.out.println(color);
 
-        color = abstractSystem.getColor(5, 1, "1.bmp1");
+        color = subject.getColor(5, 1, "1.bmp1");
         System.out.println(color);
 
-        color = abstractSystem.getColor(0, 2, "1.bmp1");
+        color = subject.getColor(0, 2, "1.bmp1");
         System.out.println(color);
     }
 }

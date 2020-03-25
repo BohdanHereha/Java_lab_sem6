@@ -9,7 +9,7 @@ import java.io.FileNotFoundException;
  * @version 1.0
  * @since 03.03.2020
  */
-public abstract class AbstractSystem {
+public abstract class Subject {
 
     /**
      * @param x

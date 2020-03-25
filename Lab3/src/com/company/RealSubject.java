@@ -5,20 +5,20 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * A class that contains the implementation of the "getColor", "getFirstLineOfFile" and "getScanner" methods
+ * A class that contains the implementation of the "getColor", "getFirstLine" and "getScanner" methods
  *
  * @author Bohdan Hereha
  * @version 1.0
  * @since 03.03.2020
  */
-public class RealSystem extends AbstractSystem {
+public class RealSubject extends Subject {
 
     /**
      * @param fileName
      * @return
      * @throws FileNotFoundException
      */
-    public String getFirstLineOfFile(String fileName) throws FileNotFoundException {
+    public String getFirstLine(String fileName) throws FileNotFoundException {
         Scanner scanner = getScanner(fileName);
         return scanner.nextLine();
     }
@@ -29,11 +29,7 @@ public class RealSystem extends AbstractSystem {
      * @throws FileNotFoundException
      */
     private static Scanner getScanner(String fileName) throws FileNotFoundException {
-        return new Scanner(
-                new File(
-                        "../Lab3/src/com/company/" + fileName
-                )
-        );
+        return new Scanner(new File("../Lab3/src/com/company/" + fileName));
     }
 
     /**
